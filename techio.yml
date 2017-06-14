@@ -1,0 +1,18 @@
+title : Python
+
+# Table of content
+plan:
+  - title: Welcome # Set the page title
+    statement: markdowns/welcome.md # Set the file path to the page content
+#  - title: Another Page
+#    statement: markdowns/another-page.md
+
+
+# Settings for your programming projects and the associated Docker images
+projects:
+  python:
+    root: /python-project # Set the root path to your Python project
+
+    # Set the docker image. This image runs tests using this syntax:
+    # @[Code Editor Title]({"stubs": ["editor_file1.py", "editor_file2.py", ...], "command": "python3 test_file.py"})
+    runner: python:3
