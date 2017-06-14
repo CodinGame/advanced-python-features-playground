@@ -1,12 +1,9 @@
-title : Python
+title : Cool Python features
 
-# Table of content
+# Table of contents
 plan:
-  - title: Welcome # Set the page title
-    statement: markdowns/welcome.md # Set the file path to the page content
-#  - title: Another Page
-#    statement: markdowns/another-page.md
-
+  - title: Cool Python features # Set the page title
+    statement: markdowns/article.md # Set the file path to the page content
 
 # Settings for your programming projects and the associated Docker images
 projects:
