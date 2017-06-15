@@ -1,10 +1,11 @@
 def cache(function):
-    cached_values = {}
-    def wrapped_function(*args):
+    cached_values = {}  # Contains already computed values
+    def wrapping_function(*args):
         if args not in cached_values:
+            # Call the function only if we haven't already done it for those parameters
             cached_values[args] = function(*args)
         return cached_values[args]
-    return wrapped_function
+    return wrapping_function
 
 @cache
 def fibonacci(n):
