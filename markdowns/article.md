@@ -1,10 +1,10 @@
-Python is full of awesome features and tricks. 
+Python is full of awesome features and tricks, that make you feel "Wow! Python is so cool!".
 
-We've done a selection of features we particularly like:
+We've done a selection of features we particularly like. We hope you'll learn something that will make you think "Neat! I didn't know that".
 
 - Generators
-- Collections
-- Itertools
+- Collections Module
+- Itertools Module
 - Packing / Unpacking
 - Decorators
 - Context Managers
@@ -23,7 +23,7 @@ For simple cases, it is possible to create a generator using a generator express
 
 @[generator expressions]({"stubs": ["generator_example.py"], "command": "python3 generator_example.py"})
 
-# Collections
+# Collections Module
 
 [`collections`](https://docs.python.org/3/library/collections.html) is a module in the standard library that implements alternative container datatypes.
 
@@ -39,7 +39,7 @@ The `defaultdict` can be used to create a tree data structure!
 
 @[Tree]({"stubs": ["defaultdict_tree.py"], "command": "python3 defaultdict_tree.py"})
 
-# Itertools
+# Itertools Module
 
 [`itertools`](https://docs.python.org/3/library/itertools.html) is a module in the standard library that allows you to to create iterators for efficient looping.
 

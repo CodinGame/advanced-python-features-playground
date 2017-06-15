@@ -1,8 +1,8 @@
-title : Cool Python features
+title : Advanced Python Features
 
 # Table of contents
 plan:
-  - title: Cool Python features # Set the page title
+  - title: Advanced Python Features # Set the page title
     statement: markdowns/article.md # Set the file path to the page content
 
 # Settings for your programming projects and the associated Docker images
