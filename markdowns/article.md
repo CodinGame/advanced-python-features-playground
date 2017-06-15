@@ -1,6 +1,6 @@
-Python is full of awesome features and tricks, that make you feel "Wow! Python is so cool!".
+Python is full of awesome features and tricks, that make you think "Wow! Python is so cool!".
 
-We've done a selection of features we particularly like. We hope you'll learn something that will make you think "Neat! I didn't know that".
+We've done a selection of features we particularly like. We hope you'll learn something that will make you say "Neat! I didn't know that".
 
 - Generators
 - Collections Module
