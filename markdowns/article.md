@@ -20,7 +20,11 @@ For example, a [`Counter`](https://docs.python.org/3/library/collections.html#co
 
 @[Counter]({ "stubs": ["collections_counter.py"], "command": "python3 collections_counter.py" })
 
+A [`defaultdict`](https://docs.python.org/3/library/collections.html#collections.defaultdict) is a subclass of `dict`, which allows to pass a factory used to create automatically a new value when a key is missing.
+
 @[defaultdict]({"stubs": ["defaultdict.py"], "command": "python3 defaultdict.py"})
+
+The `defaultdict` can be used to create a tree data structure!
 
 @[Tree]({"stubs": ["defaultdict_tree.py"], "command": "python3 defaultdict_tree.py"})
 
