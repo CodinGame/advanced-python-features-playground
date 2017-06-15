@@ -9,7 +9,7 @@ We've done a selection of features we particularly like. We hope you'll learn so
 - Decorators
 - Context Managers
 
-The source code is on [GitHub](https://github.com/CodinGame/python-template), please feel free to come up with proposals to improve it.
+The source code is on [GitHub](https://github.com/CodinGame/advanced-python-features-playground), please feel free to come up with ideas to improve it.
 
 # Generators
 
@@ -19,7 +19,7 @@ A generator can be created using a function that uses the `yield` keyword to gen
 
 @[yield operator]({"stubs": ["yield.py"], "command": "python3 yield.py"})
 
-For simple cases, it is possible to create a generator using a generator expression. As opposed to a list, the values will be computed on the fly instead of being computed once and stored in memory.
+For simple cases, it is possible to create a generator using a **generator expression**. As opposed to a list, the values will be computed on the fly instead of being computed once and stored in memory.
 
 @[generator expressions]({"stubs": ["generator.py"], "command": "python3 generator.py"})
 
@@ -27,7 +27,7 @@ For simple cases, it is possible to create a generator using a generator express
 
 [`collections`](https://docs.python.org/3/library/collections.html) is a module in the standard library that implements alternative container datatypes.
 
-For example, a [`Counter`](https://docs.python.org/3/library/collections.html#collections.Counter) is a collection where elements are stored as dictonary keys and their counts are stored as dictionary values:
+For example, a [`Counter`](https://docs.python.org/3/library/collections.html#collections.Counter) is a collection where elements are stored as dictionary keys and their counts are stored as dictionary values:
 
 @[Counter]({ "stubs": ["collections_counter.py"], "command": "python3 collections_counter.py" })
 
@@ -41,9 +41,9 @@ The `defaultdict` can be used to create a tree data structure!
 
 # Itertools Module
 
-[`itertools`](https://docs.python.org/3/library/itertools.html) is a module in the standard library that allows you to to create iterators for efficient looping.
+[`itertools`](https://docs.python.org/3/library/itertools.html) is a module in the standard library that allows you to create iterators for efficient looping.
 
-For example, [`permutations`](https://docs.python.org/3/library/itertools.html#itertools.permutations) ) allows you to generate all the possible ways of ordering a set of things:
+For example, [`permutations`](https://docs.python.org/3/library/itertools.html#itertools.permutations) allows you to generate all the possible ways of ordering a set of things:
 
 @[permutations]({ "stubs": ["itertools_permutations.py"], "command": "python3 itertools_permutations.py" })
 
@@ -51,13 +51,13 @@ Similarly, [`combinations` ](https://docs.python.org/3/library/itertools.html#it
 
 @[combinations]({ "stubs": ["itertools_combinations.py"], "command": "python3 itertools_combinations.py" })
 
-`itertools` also contains utility functions such as `chain`, which takes iterables and creates a new iterator that returns elements from the given iterables sequentially, as a single sequence:
+`itertools` also contains utility functions such as [`chain`](https://docs.python.org/3/library/itertools.html#itertools.chain), which takes iterables and creates a new iterator that returns elements from the given iterables sequentially, as a single sequence:
 
 @[chain]({ "stubs": ["itertools_chain.py"], "command": "python3 itertools_chain.py" })
 
 # Packing / Unpacking
 
-The `*` operator, known as the unpack or splat operator allows very convenient transformations, going from list or tuples to separate variables or arguments and conversely.
+The `*` operator, known as the unpack or splat operator allows very convenient transformations, going from lists or tuples to separate variables or arguments and conversely.
 
 @[Extended Iterable Unpacking]({"stubs": ["unpacking.py"], "command": "python3 unpacking.py"})
 
@@ -77,15 +77,15 @@ For example, in the following code, the `cache` function is used as a decorator 
 
 @[decorators]({ "stubs": ["decorators.py"], "command": "python3 decorators.py" })
 
-The [`functools`](https://docs.python.org/3/library/functools.html) module provides a few decorators, such as [`lru_cache`](https://docs.python.org/3/library/functools.html#functools.lru_cache) which can do what we just did: memoization. It saves recent calls to same time when a given function is called with the same arguments:
+The [`functools`](https://docs.python.org/3/library/functools.html) module provides a few decorators, such as [`lru_cache`](https://docs.python.org/3/library/functools.html#functools.lru_cache) which can do what we just did: memoization. It saves recent calls to save time when a given function is called with the same arguments:
 
 @[lru_cache]({ "stubs": ["lru_cache.py"], "command": "python3 lru_cache.py" })
 
 # Context Managers
 
-Context managers are mainly used to properly manage ressources. The most common use of a context manager is the opening of a file: `with open('workfile', 'r') as f:`. But most developers have no idea how that really works underneath nor how they can create their own.
+Context managers are mainly used to properly manage resources. The most common use of a context manager is the opening of a file: `with open('workfile', 'r') as f:`. However most developers have no idea how that really works underneath nor how they can create their own.
 
-A [context manager](https://docs.python.org/3/library/stdtypes.html#typecontextmanager) is a class that implements the methods `__enter__` and `__exit__`.
+Actually, a [context manager](https://docs.python.org/3/library/stdtypes.html#typecontextmanager) is just a class that implements the methods `__enter__` and `__exit__`.
 
 @[Context Manager]({"stubs": ["context_manager.py"], "command": "python3 context_manager.py"})
 
