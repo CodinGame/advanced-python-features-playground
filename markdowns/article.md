@@ -92,3 +92,5 @@ Actually, a [context manager](https://docs.python.org/3/library/stdtypes.html#ty
 For simple use cases, it's also possible to use a generator function with a single `yield`, using the [`@contextmanager`](https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager) decorator.
 
 @[Context Manager Using @contextmanager]({"stubs": ["context_manager_decorator.py"], "command": "python3 context_manager_decorator.py"})
+
+Voilà! We hoped you enjoyed our selection of best features in Python 3, feel free to share your feedback on the forum or on our [Github](https://github.com/CodinGame/advanced-python-features-playground) :)
