@@ -2,7 +2,13 @@ The source code is on [GitHub](https://github.com/CodinGame/python-template), pl
 
 # Generators
 
+A generator is an object that produces a sequence of values. It can be used as an iterator, which means that you can use it with a `for` statement, or use the `next` function to get the next value. However, you can iterate over the values only once.
+
+A generator can be created using a function that uses the `yield` keyword to generate a value. When a generator function is called, a generator object is created.
+
 @[yield operator]({"stubs": ["yield_example.py"], "command": "python3 yield_example.py"})
+
+For simple cases, it is possible to create a generator using a generator expression. As opposed to a list, the values will be computed on the fly instead of being computed once and stored in memory.
 
 @[generator expressions]({"stubs": ["generator_example.py"], "command": "python3 generator_example.py"})
 
