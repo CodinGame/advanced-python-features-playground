@@ -1,3 +1,14 @@
+Python is full of awesome features and tricks. 
+
+We've done a selection of features we particularly like:
+
+- Generators
+- Collections
+- Itertools
+- Packing / Unpacking
+- Decorators
+- Context Managers
+
 The source code is on [GitHub](https://github.com/CodinGame/python-template), please feel free to come up with proposals to improve it.
 
 # Generators
@@ -44,7 +55,7 @@ Similarly, [`combinations` ](https://docs.python.org/3/library/itertools.html#it
 
 @[chain]({ "stubs": ["itertools_chain.py"], "command": "python3 itertools_chain.py" })
 
-# Packing and Unpacking
+# Packing / Unpacking
 
 The `*` operator, known as the unpack or splat operator allows very convenient transformations, going from list or tuples to separate variables or arguments and conversely.
 
@@ -70,7 +81,7 @@ The [`functools`](https://docs.python.org/3/library/functools.html) module provi
 
 @[lru_cache]({ "stubs": ["lru_cache.py"], "command": "python3 lru_cache.py" })
 
-# Context Manager
+# Context Managers
 
 Context managers are mainly used to properly manage ressources. The most common use of a context manager is the opening of a file: `with open('workfile', 'r') as f:`. But most developers have no idea how that really works underneath nor how they can create their own.
 
@@ -78,6 +89,6 @@ A [context manager](https://docs.python.org/3/library/stdtypes.html#typecontextm
 
 @[Context Manager]({"stubs": ["context_manager.py"], "command": "python3 context_manager.py"})
 
-For simple use cases, it's also possible to use a generator function with a single `yield`, using the `@contextmanager` decorator. [See the documentation.](https://docs.python.org/3/library/contextlib.html)
+For simple use cases, it's also possible to use a generator function with a single `yield`, using the [`@contextmanager`](https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager) decorator.
 
 @[Context Manager Using @contextmanager]({"stubs": ["context_manager_decorator.py"], "command": "python3 context_manager_decorator.py"})
