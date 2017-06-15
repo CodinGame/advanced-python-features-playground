@@ -50,17 +50,17 @@ The `*` operator, known as the unpack or splat operator allows very convenient t
 
 @[Extended Iterable Unpacking]({"stubs": ["unpacking.py"], "command": "python3 unpacking.py"})
 
-When the arguments for you function are already in a list of tuple, you can unpack them using `*args` if it's a `list`, or `**kwargs` if that's a `dict`.
+When the arguments for your function are already in a list or in a tuple, you can unpack them using `*args` if it's a `list`, or `**kwargs` if that's a `dict`.
 
 @[unpacking arguments]({"stubs": ["unpacking_arguments.py"], "command": "python3 unpacking_arguments.py"})
 
-The opposite is also possible, you can define a function that will pack all the arguments in a single list.
+The opposite is also possible, you can define a function that will pack all the arguments in a single `tuple` and all the keyword arguments in a single `dict`.
 
 @[keyword arguments]({"stubs": ["keyword_arguments.py"], "command": "python3 keyword_arguments.py"})
 
 # Decorators
 
-A decorator is simply a function which takes a function as a parameter and returns a function. 
+A **decorator** is simply a function which takes a function as a parameter and returns a function. 
 
 For example, in the following code, the `cache` function is used as a decorator to remember the Fibonacci numbers that have already been computed:
 
