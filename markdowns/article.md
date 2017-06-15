@@ -58,6 +58,12 @@ The opposite is also possible, you can define a function that will pack all the 
 
 # Context Manager
 
+Context managers are mainly used to properly manage ressources. The most common use of a context manager is the opening of a file: `with open('workfile', 'r') as f:`. But most developers have no idea how that really works underneath nor how they can create their own.
+
+A [context manager](https://docs.python.org/3/library/stdtypes.html#typecontextmanager) is a class that implements the methods `__enter__` and `__exit__`.
+
 @[Context Manager]({"stubs": ["context_manager.py"], "command": "python3 context_manager.py"})
+
+For simple use cases, it's also possible to use a generator function with a single `yield`, using the `@contextmanager` decorator. [See the documentation.](https://docs.python.org/3/library/contextlib.html)
 
 @[Context Manager Using @contextmanager]({"stubs": ["context_manager_decorator.py"], "command": "python3 context_manager_decorator.py"})
