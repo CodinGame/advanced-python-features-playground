@@ -14,6 +14,10 @@ For simple cases, it is possible to create a generator using a generator express
 
 # Collections
 
+[`collections`](https://docs.python.org/3/library/collections.html) is a module in the standard library that implements alternative container datatypes.
+
+For example, a [`Counter`](https://docs.python.org/3/library/collections.html#collections.Counter) is a collection where elements are stored as dictonary keys and their counts are stored as dictionary values:
+
 @[Counter]({ "stubs": ["collections_counter.py"], "command": "python3 collections_counter.py" })
 
 @[defaultdict]({"stubs": ["defaultdict.py"], "command": "python3 defaultdict.py"})
@@ -22,7 +26,7 @@ For simple cases, it is possible to create a generator using a generator express
 
 # Itertools
 
-`itertools` is a module in the standard library that allows you to to create iterators for efficient looping.
+[`itertools`](https://docs.python.org/3/library/itertools.html) is a module in the standard library that allows you to to create iterators for efficient looping.
 
 For example, [`permutations`](https://docs.python.org/3/library/itertools.html#itertools.permutations) ) allows you to generate all the possible ways of ordering a set of things:
 
@@ -52,7 +56,13 @@ The opposite is also possible, you can define a function that will pack all the 
 
 # Decorators
 
+A decorator is simply a function which takes a function as a parameter and returns a function. 
+
+For example, in the following code, the `cache` function is used as a decorator to remember the Fibonacci numbers that have already been computed:
+
 @[decorators]({ "stubs": ["decorators.py"], "command": "python3 decorators.py" })
+
+The [`functools`](https://docs.python.org/3/library/functools.html) module provides a few decorators, such as [`lru_cache`](https://docs.python.org/3/library/functools.html#functools.lru_cache) which can do what we just did: memoization. It saves recent calls to same time when a given function is called with the same arguments:
 
 @[lru_cache]({ "stubs": ["lru_cache.py"], "command": "python3 lru_cache.py" })
 
