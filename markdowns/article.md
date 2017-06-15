@@ -16,9 +16,17 @@ The source code is on [GitHub](https://github.com/CodinGame/python-template), pl
 
 # Itertools
 
+`itertools` is a module in the standard library that allows you to to create iterators for efficient looping.
+
+For example, [`permutations`](https://docs.python.org/3/library/itertools.html#itertools.permutations) ) allows you to generate all the possible ways of ordering a set of things:
+
 @[permutations]({ "stubs": ["itertools_permutations.py"], "command": "python3 itertools_permutations.py" })
 
+Similarly, [`combinations` ](https://docs.python.org/3/library/itertools.html#itertools.combinations) generates all the possible ways of selecting items from a collection, such that (unlike permutations) the order does not matter:
+
 @[combinations]({ "stubs": ["itertools_combinations.py"], "command": "python3 itertools_combinations.py" })
+
+`itertools` also contains utility functions such as `chain`, which takes iterables and creates a new iterator that returns elements from the given iterables sequentially, as a single sequence:
 
 @[chain]({ "stubs": ["itertools_chain.py"], "command": "python3 itertools_chain.py" })
 
