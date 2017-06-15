@@ -36,11 +36,17 @@ Similarly, [`combinations` ](https://docs.python.org/3/library/itertools.html#it
 
 @[chain]({ "stubs": ["itertools_chain.py"], "command": "python3 itertools_chain.py" })
 
-# Unpacking
+# Packing and Unpacking
+
+The `*` operator, known as the unpack or splat operator allows very convenient transformations, going from list or tuples to separate variables or arguments and conversely.
 
 @[Extended Iterable Unpacking]({"stubs": ["unpacking.py"], "command": "python3 unpacking.py"})
 
+When the arguments for you function are already in a list of tuple, you can unpack them using `*args` if it's a `list`, or `**kwargs` if that's a `dict`.
+
 @[unpacking arguments]({"stubs": ["unpacking_arguments.py"], "command": "python3 unpacking_arguments.py"})
+
+The opposite is also possible, you can define a function that will pack all the arguments in a single list.
 
 @[keyword arguments]({"stubs": ["keyword_arguments.py"], "command": "python3 keyword_arguments.py"})
 
