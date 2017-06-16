@@ -2,16 +2,16 @@ Python is full of awesome features and tricks, that make you think "Wow! Python 
 
 We've done a selection of features we particularly like. We hope you'll learn something that will make you say "Neat! I didn't know that".
 
-- Generators
-- Collections Module
-- Itertools Module
-- Packing / Unpacking
-- Decorators
-- Context Managers
+- [Generators](#generators)
+- [Collections Module](#collections)
+- [Itertools Module](#itertools)
+- [Packing / Unpacking](#unpacking)
+- [Decorators](#decorators)
+- [Context Managers](#context-managers)
 
 The source code is on [GitHub](https://github.com/CodinGame/advanced-python-features-playground), please feel free to come up with ideas to improve it.
 
-# Generators
+# <a name="generators"></a> Generators
 
 A **generator** is an object that produces a sequence of values. It can be used as an iterator, which means that you can use it with a `for` statement, or use the `next` function to get the next value. However, you can iterate over the values only once.
 
@@ -23,7 +23,7 @@ For simple cases, it is possible to create a generator using a **generator expre
 
 @[generator expressions]({"stubs": ["generator.py"], "command": "python3 generator.py"})
 
-# Collections Module
+# <a name="collections"></a> Collections Module
 
 [`collections`](https://docs.python.org/3/library/collections.html) is a module in the standard library that implements alternative container datatypes.
 
@@ -39,7 +39,7 @@ The `defaultdict` can be used to create a tree data structure!
 
 @[Tree]({"stubs": ["defaultdict_tree.py"], "command": "python3 defaultdict_tree.py"})
 
-# Itertools Module
+# <a name="itertools"></a> Itertools Module
 
 [`itertools`](https://docs.python.org/3/library/itertools.html) is a module in the standard library that allows you to create iterators for efficient looping.
 
@@ -55,7 +55,7 @@ Similarly, [`combinations` ](https://docs.python.org/3/library/itertools.html#it
 
 @[chain]({ "stubs": ["itertools_chain.py"], "command": "python3 itertools_chain.py" })
 
-# Packing / Unpacking
+# <a name="unpacking"></a> Packing / Unpacking
 
 The `*` operator, known as the unpack or splat operator allows very convenient transformations, going from lists or tuples to separate variables or arguments and conversely.
 
@@ -69,7 +69,7 @@ The opposite is also possible, you can define a function that will pack all the 
 
 @[keyword arguments]({"stubs": ["keyword_arguments.py"], "command": "python3 keyword_arguments.py"})
 
-# Decorators
+# <a name="decorators"></a> Decorators
 
 A **decorator** is simply a function which takes a function as a parameter and returns a function. 
 
@@ -81,7 +81,7 @@ The [`functools`](https://docs.python.org/3/library/functools.html) module provi
 
 @[lru_cache]({ "stubs": ["lru_cache.py"], "command": "python3 lru_cache.py" })
 
-# Context Managers
+# <a name="context-managers"></a> Context Managers
 
 Context managers are mainly used to properly manage resources. The most common use of a context manager is the opening of a file: `with open('workfile', 'r') as f:`. However most developers have no idea how that really works underneath nor how they can create their own.
 
